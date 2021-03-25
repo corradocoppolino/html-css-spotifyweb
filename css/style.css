@@ -4,6 +4,36 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* common */
+
+.margin-left-10{
+    margin-left: 10px;
+}
+
+.margin-right-10{
+    margin-right: 10px;
+}
+
+.margin-top-10{
+    margin-top: 15px;
+}
+
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+
+.grey{
+    color: #A3A3A3;
+}
+
+.white{
+    color: white;
+}
+
 /* main */
 
 .wrapper{
@@ -11,30 +41,108 @@
     display: flex;
 }
 
+/* barra laterale */
+
 .lateral-bar{
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 200px;
     height: 100%;
-    background-color: violet;
+    background-color: black;
 }
 
-.flex-wrap{
+/* barra laterale logo */
+
+.lateral-bar .box-logo{
+    height: 80px;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.lateral-bar .logo{
+    width: 70%;
+}
+
+/* barra laterale menu */
+
+.lateral-bar .box-menu{
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lateral-bar .box-menu .option{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.lateral-bar .box-menu .symbol{
+    width: 15%;
+}
+
+.lateral-bar .box-add{
+    height: 30px;
+    width: 30px;
+    background-color: #A3A3A3;
+}
+
+.lateral-bar p{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.lateral-bar h3{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.lateral-bar h4{
+    font-size: 15px;
+}
+
+/* container nav-bar e parte centrale */
+
+.container{
+    width: calc(100% - 200px);
+}
+
+/* nav bar */
 
 .nav-bar{
     display: flex;
-    width: 85%;
+    width: 100%;
     height: 80px;
     background-color: tomato;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+button{
+    height: 50px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 0 50px;
+    color: white;
+    margin-right: 20px;
+    font-size: 13px;
+}
+
+/* parte principale */
 
 .content{
     display: flex;
     height: calc(100% - 80px);
-    width: 85%;
+    width: 100%;
     background-color: teal;
 }
 
