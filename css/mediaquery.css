@@ -1,0 +1,39 @@
+@media (max-width: 600px) {
+
+
+    .lateral-bar{
+        width: 50px;
+        height: 100%;
+    }
+
+    .lateral-bar .box-logo{
+        height: 50px;
+        width: 100%;
+    }
+
+    .lateral-bar .logo{
+        display: none;
+    }
+    
+    .lateral-bar .logo-mobile{
+        display: block;
+        width: 50%;
+    }
+
+    .lateral-bar .playlist{
+        display: none;
+    }
+
+    .lateral-bar .box-menu h4{
+        display: none;
+    }
+
+    .lateral-bar .box-menu .symbol{
+        width: 50%;
+    }
+
+    .container{
+        width: calc(100% - 50px);
+    }
+
+}

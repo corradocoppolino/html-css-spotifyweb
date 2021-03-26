@@ -10,6 +10,10 @@ body{
 
 /* common */
 
+.margin-left-border{
+    margin-left: 6px;
+}
+
 .margin-left-10{
     margin-left: 10px;
 }
@@ -36,9 +40,15 @@ body{
 
 /* main */
 
+.container-general{
+    width: 100%;
+    height: 100vh;
+}
+
 .wrapper{
     height: calc(100vh - 80px);
     display: flex;
+    z-index: 0;
 }
 
 /* barra laterale */
@@ -46,9 +56,9 @@ body{
 .lateral-bar{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 230px;
     height: 100%;
-    background-color: black;
+    background-color: #000000;
 }
 
 /* barra laterale logo */
@@ -65,16 +75,34 @@ body{
     width: 70%;
 }
 
+.lateral-bar .logo-mobile{
+    display: none;
+}
+
 /* barra laterale menu */
 
 .lateral-bar .box-menu{
-    height: calc(100% - 80px);
+    height: calc(100% - 160px);
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 .lateral-bar .box-menu .option{
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.lateral-bar .box-menu .border-left-green{
+    border-left: 4px solid #BEFF5A;
+    height: 30px;
+}
+
+.lateral-bar .box-menu .option-playlist{
     display: flex;
     flex-direction: row;
     height: 30px;
@@ -83,35 +111,87 @@ body{
 }
 
 .lateral-bar .box-menu .symbol{
-    width: 15%;
+    width: 12%;
 }
 
-.lateral-bar .box-add{
+.lateral-bar .box-menu .box-add{
     height: 30px;
     width: 30px;
     background-color: #A3A3A3;
 }
 
-.lateral-bar p{
+.lateral-bar .box-menu .add{
     font-weight: 400;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 30px;
     text-align: center;
 }
 
-.lateral-bar h3{
+.lateral-bar .box-menu h3{
     font-size: 15px;
     font-weight: bold;
 }
 
-.lateral-bar h4{
-    font-size: 15px;
+.lateral-bar .box-menu h4{
+    font-size: 12px;
 }
+
+/* barra laterale account */
+
+.lateral-bar .box-account{
+    height: 80px;
+    background-color: blueviolet;
+}
+
+.lateral-bar .box-account .border-bottom{
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.lateral-bar .box-account .download{
+    height: 25px;
+}
+
+.lateral-bar .box-account .download img{
+    height: 15px;
+    line-height: 15px;
+    vertical-align: middle;
+}
+
+.lateral-bar .box-account .download p{
+    font-size: 15px;
+    display: inline-block;
+    line-height: 15px;
+    vertical-align: middle;
+}
+
+.lateral-bar .box-account .account{
+    height: 20px;
+    position: relative;
+}
+
+.lateral-bar .box-account .account img{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 0;
+}
+
+.lateral-bar .box-account .account h3{
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: 30px;
+    line-height: 30px;
+}
+
+
 
 /* container nav-bar e parte centrale */
 
 .container{
-    width: calc(100% - 200px);
+    width: calc(100% - 230px);
+    background-color: #272C36;
 }
 
 /* nav bar */
@@ -120,7 +200,7 @@ body{
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: tomato;
+    background-color: rgba(0, 0, 0, 0.4);
     justify-content: flex-end;
     align-items: center;
 }
@@ -143,7 +223,6 @@ button{
     display: flex;
     height: calc(100% - 80px);
     width: 100%;
-    background-color: teal;
 }
 
 /* footer */
@@ -152,6 +231,6 @@ footer{
     display: flex;
     justify-content: space-between;
     height: 80px;
-    background-color: #282828;
+    background-color: #383838;
     color: white;
 }

@@ -6,106 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Spotify</title>
 </head>
 <body>
     
     <!-- main -->
 
-    <main>
-        <div class="wrapper">
+    <div class="container-general">
 
-            <!-- barra laterale -->
-
-            <div class="lateral-bar">
-
-                <div class="box-logo">
-
-                    <img class="logo margin-left-10" src="img/logo.svg" alt="logo spotify">
-
-                </div>
-
-                <div class="box-menu">
-                    
-                    <div class="option">
-                        <img class="symbol margin-left-10 margin-right-10" src="img/home.svg" alt="home">
-                        <h4 class="white">Home</h4>
-                    </div>
-                    <div class="option">
-                        <img class="symbol margin-left-10 margin-right-10" src="img/search.svg" alt="search">
-                        <h4 class="grey">Cerca</h4>
-                    </div>
-                    <div class="option">
-                        <img class="symbol margin-left-10 margin-right-10" src="img/libreria.svg" alt="library">
-                        <h4 class="grey">La tua libreria</h4>
-                    </div>
-                    <div class="option">
-                        <h3 class="margin-left-10 margin-top-10 margin-bottom-10 white">PLAYLIST</h3>
-                    </div>
-                    <div class="option">
-                        <div class="box-add margin-left-10 margin-right-10">
-                            <p>+</p>
+        <main>
+            <div class="wrapper">
+    
+                <!-- barra laterale -->
+    
+                <div class="lateral-bar">
+    
+                    <div class="box-logo">
+    
+                        <div class="logo-large">
+                            <img class="logo margin-left-10" src="img/logo.svg" alt="logo spotify">
                         </div>
-                        <h4 class="grey">Crea Playlist</h4>
+    
+                        <div class="logo-mobile margin-left-10">
+                            <img src="img/logo-small.svg" alt="logo spotify-mobile">
+                        </div>
+    
                     </div>
-                    <div class="option">
-                        <h4 class="margin-left-10 grey">Nome Playlist</h4>
-                    </div>
-                    <div class="option">
-                        <h4 class="margin-left-10 grey">Nome Playlist</h4>
-                    </div>
-                    <div class="option">
-                        <h4 class="margin-left-10 grey">Nome Playlist</h4>
-                    </div>
-                    <div class="option">
-                        <h4 class="margin-left-10 grey">Nome Playlist</h4>
-                    </div>
-                    <div class="option">
-                        <h4 class="margin-left-10 grey">Nome Playlist</h4>
-                    </div>
-                    <div class="option">
-                        <h4 class="margin-left-10 grey">Nome Playlist</h4>
-                    </div>
-                    <div class="option">
-                        <h4 class="margin-left-10 grey">Nome Playlist</h4>
-                    </div>
-                    <div class="option">
-                        <h4 class="margin-left-10 grey">Nome Playlist</h4>
+    
+                    <div class="box-menu">
+                        
+                        <div class="option border-left-green">
+                            <img class="symbol margin-left-border margin-right-10" src="img/home.svg" alt="home">
+                            <h4 class="white">Home</h4>
+                        </div>
+                        <div class="option margin-top-10">
+                            <img class="symbol margin-left-10 margin-right-10" src="img/search.svg" alt="search">
+                            <h4 class="grey">Cerca</h4>
+                        </div>
+                        <div class="option margin-top-10">
+                            <img class="symbol margin-left-10 margin-right-10" src="img/libreria.svg" alt="library">
+                            <h4 class="grey">La tua libreria</h4>
+                        </div>
+                        
+    
+                        <!-- playlist -->
+                        
+                        
+                        <div class="playlist">
+                            <div class="option margin-top-10">
+                                <h3 class="margin-left-10 margin-top-10 margin-bottom-10 white">PLAYLIST</h3>
+                            </div>
+                            <div class="option-playlist margin-top-10">
+                                <div class="box-add margin-left-10 margin-right-10">
+                                    <p class="add">+</p>
+                                </div>
+                                <h4 class="grey">Crea Playlist</h4>
+                            </div>
+                            <div class="option margin-top-10">
+                                <h4 class="margin-left-10 grey">Nome Playlist</h4>
+                            </div>
+                            <div class="option margin-top-10">
+                                <h4 class="margin-left-10 grey">Nome Playlist</h4>
+                            </div>
+                            <div class="option margin-top-10">
+                                <h4 class="margin-left-10 grey">Nome Playlist</h4>
+                            </div>
+                            <div class="option margin-top-10">
+                                <h4 class="margin-left-10 grey">Nome Playlist</h4>
+                            </div>
+                            <div class="option margin-top-10">
+                                <h4 class="margin-left-10 grey">Nome Playlist</h4>
+                            </div>
+                            <div class="option margin-top-10">
+                                <h4 class="margin-left-10 grey">Nome Playlist</h4>
+                            </div>
+                            <div class="option margin-top-10">
+                                <h4 class="margin-left-10 grey">Nome Playlist</h4>
+                            </div>
+                            <div class="option margin-top-10">
+                                <h4 class="margin-left-10 grey">Nome Playlist</h4>
+                            </div>
+                        </div>
+    
                     </div>
 
+                    <div class="box-account">
 
-                </div>
+                        <div class="download margin-left-border border-bottom margin-right-10">
+                            <img src="img/download.svg" alt="download">
+                            <p class="grey">Installa app</p>
+                        </div>
 
-            </div>
+                        <div class="account margin-left-10">
+                            <img src="img/profile.svg" alt="profile">
+                            <h3 class="white">John Doe</h3>
+                        </div>
 
-            <div class="container">
-
-                <!-- nav bar -->
-
-                <div class="nav-bar">
-
-                    <button class="btn">
-                        effettua l'upgrade
-                    </button>
-
+                    </div>
+    
                 </div>
 
                 <!-- parte centrale -->
-
-                <div class="content"></div>
+    
+                <div class="container">
+    
+                    <!-- nav bar -->
+    
+                    <div class="nav-bar">
+    
+                        <button class="btn">
+                            effettua l'upgrade
+                        </button>
+    
+                    </div>
+    
+                    <!-- parte centrale -->
+    
+                    <div class="content">
+    
+    
+    
+                    </div>
+    
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+    
+        <!-- footer -->
+    
+        <footer>
+            <div class="footer-left">sinistra</div>
+            <div class="footer-center">centro</div>
+            <div class="footer-right">destra</div>
+        </footer>
 
-    <!-- footer -->
-
-    <footer>
-        <div class="footer-left">sinistra</div>
-        <div class="footer-center">centro</div>
-        <div class="footer-right">destra</div>
-    </footer>
+    </div>
 
 </body>
 </html>
