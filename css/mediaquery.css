@@ -24,6 +24,10 @@
         display: none;
     }
 
+    .lateral-bar .box-menu {
+        height: calc(100% - 130px);
+    }
+    
     .lateral-bar .box-menu h4{
         display: none;
     }
@@ -32,8 +36,32 @@
         width: 50%;
     }
 
+    .lateral-bar .box-account{
+        height: 80px;
+    }
+
+    .lateral-bar .box-account .download p, .lateral-bar .box-account .account h3{
+        display: none;
+    }
+
+    .lateral-bar .box-account .download img{
+        width: 100%;
+    }
+
+    .lateral-bar .box-account .border-bottom{
+        border: none;
+    }
+
+    .lateral-bar .box-account .account{
+        justify-content: center;
+        align-items: flex-end;
+    }
+
     .container{
         width: calc(100% - 50px);
     }
 
+    .nav-bar{
+        width: calc(100% - 50px);
+    }
 }
